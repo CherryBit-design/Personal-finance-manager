@@ -1,0 +1,121 @@
+/* 🌌 Fullscreen Vibrant Background */
+body {
+  background: linear-gradient(135deg, #ff9a9e, #fad0c4, #fad0c4, #ffdde1);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+}
+
+/* 🎭 Floating Card Login Box */
+.login-container {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+  padding: 100px;
+  width: 500px;
+  height: 400px;
+  backdrop-filter: blur(15px);
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  transition: 0.5s;
+  position: relative;
+  overflow: hidden;
+}
+
+/* 💡 Floating Glow Effect */
+.login-container::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(45deg, rgba(255, 255, 255, 0.3), transparent);
+  opacity: 0.6;
+  z-index: -1;
+  transition: 0.5s;
+}
+
+/* 🔥 Floating on Hover */
+.login-container:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 15px 40px rgba(0, 0, 0, 0.5);
+}
+
+/* 🌟 Login Heading */
+h2 {
+  font-size: 26px;
+  font-weight: bold;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 15px;
+  text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.5);
+}
+
+/* 🎯 Input Fields */
+.input-field {
+  background: rgba(255, 255, 255, 0.2);
+  border: none;
+  color: white;
+  padding: 12px;
+  border-radius: 8px;
+  width: 100%;
+  margin-bottom: 15px;
+  font-size: 15px;
+  text-align: center;
+  transition: 0.3s;
+  outline: none;
+}
+
+.input-field:focus {
+  background: rgba(255, 255, 255, 0.3);
+  box-shadow: 0px 0px 12px rgba(255, 255, 255, 0.6);
+}
+
+/* 🔥 Neon Button */
+.btnStyle {
+  background: linear-gradient(90deg, #ff7eb3, #ff758c);
+  border: none;
+  padding: 12px 25px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 8px;
+  transition: 0.3s;
+  width: 90%;
+  text-transform: uppercase;
+  box-shadow: 0px 4px 10px rgba(255, 118, 136, 0.6);
+  color: white;
+  cursor: pointer;
+}
+
+.btnStyle:hover {
+  background: linear-gradient(90deg, #ff758c, #ff7eb3);
+  transform: scale(1.05);
+  box-shadow: 0px 6px 20px rgba(255, 118, 136, 0.9);
+}
+
+/* 🔗 Cool Links */
+.lnk {
+  color: #ffeb3b;
+  font-weight: bold;
+  text-decoration: none;
+  transition: 0.3s;
+  font-size: 14px;
+}
+
+.lnk:hover {
+  text-decoration: underline;
+  color: #ffeb99;
+}
+
+/* 🌈 Subtle Floating Animation */
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-8px); }
+  100% { transform: translateY(0px); }
+}
+
+.login-container {
+  animation: float 5s ease-in-out infinite;
+}
